@@ -1,0 +1,16 @@
+D:\Project\boot-run\boot-run\boot-run\bin\Debug\boot-run.exe
+D:\Project\boot-run\boot-run\boot-run\bin\Debug\boot-run.pdb
+D:\Project\boot-run\boot-run\boot-run\bin\Debug\Microsoft.Win32.TaskScheduler.dll
+D:\Project\boot-run\boot-run\boot-run\bin\Debug\Microsoft.Win32.TaskScheduler.xml
+D:\Project\boot-run\boot-run\boot-run\bin\Debug\de\Microsoft.Win32.TaskScheduler.resources.dll
+D:\Project\boot-run\boot-run\boot-run\bin\Debug\es\Microsoft.Win32.TaskScheduler.resources.dll
+D:\Project\boot-run\boot-run\boot-run\bin\Debug\fr\Microsoft.Win32.TaskScheduler.resources.dll
+D:\Project\boot-run\boot-run\boot-run\bin\Debug\it\Microsoft.Win32.TaskScheduler.resources.dll
+D:\Project\boot-run\boot-run\boot-run\bin\Debug\pl\Microsoft.Win32.TaskScheduler.resources.dll
+D:\Project\boot-run\boot-run\boot-run\bin\Debug\ru\Microsoft.Win32.TaskScheduler.resources.dll
+D:\Project\boot-run\boot-run\boot-run\bin\Debug\zh-CN\Microsoft.Win32.TaskScheduler.resources.dll
+D:\Project\boot-run\boot-run\boot-run\obj\Debug\boot-run.csprojAssemblyReference.cache
+D:\Project\boot-run\boot-run\boot-run\obj\Debug\boot-run.csproj.CoreCompileInputs.cache
+D:\Project\boot-run\boot-run\boot-run\obj\Debug\boot-run.csproj.CopyComplete
+D:\Project\boot-run\boot-run\boot-run\obj\Debug\boot-run.exe
+D:\Project\boot-run\boot-run\boot-run\obj\Debug\boot-run.pdb
