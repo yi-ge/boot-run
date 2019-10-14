@@ -37,33 +37,28 @@ namespace boot_run
                     string exePath = args[1];
                     string arguments = args.Length > 2 ? args[2] : null;
 
-                    // Get the service on the remote machine
-                    using (TaskService ts = new TaskService(@"\\RemoteServer"))
+                    // Create a new task definition and assign properties
+                    TaskDefinition td = TaskService.Instance.NewTask();
+                    td.RegistrationInfo.Description = appName + " set by boot-run";
+                    td.Settings.DisallowStartIfOnBatteries = false;
+                    td.Settings.ExecutionTimeLimit = TimeSpan.Zero;
+
+                    if (newVer)
                     {
-                        // Create a new task definition and assign properties
-                        TaskDefinition td = ts.NewTask();
-                        td.RegistrationInfo.Description = appName + " set by boot-run";
-                        td.Settings.DisallowStartIfOnBatteries = false;
-                        td.Settings.ExecutionTimeLimit = TimeSpan.Zero;
-
-                        if (newVer)
-                        {
-                            td.Principal.RunLevel = TaskRunLevel.Highest;
-                        }
-
-                        // Create a trigger that will fire the task at this time every other day
-                        LogonTrigger lt = new LogonTrigger();
-                        lt.UserId = null;
-                        lt.Enabled = true;
-                        td.Triggers.Add(lt);
-
-                        // Create an action that will launch Notepad whenever the trigger fires
-                        td.Actions.Add(new ExecAction(exePath, arguments));
-
-                        // Register the task in the root folder
-                        ts.RootFolder.RegisterTaskDefinition(appName, td);
-
+                        td.Principal.RunLevel = TaskRunLevel.Highest;
                     }
+
+                    // Create a trigger that will fire the task at this time every other day
+                    LogonTrigger lt = new LogonTrigger();
+                    lt.UserId = null;
+                    lt.Enabled = true;
+                    td.Triggers.Add(lt);
+
+                    // Create an action that will launch Notepad whenever the trigger fires
+                    td.Actions.Add(new ExecAction(exePath, arguments));
+
+                    // Register the task in the root folder
+                    TaskService.Instance.RootFolder.RegisterTaskDefinition(appName, td);
                 }
                 else
                 {

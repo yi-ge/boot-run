@@ -9,7 +9,6 @@ D:\Project\boot-run\boot-run\boot-run\bin\Release\it\Microsoft.Win32.TaskSchedul
 D:\Project\boot-run\boot-run\boot-run\bin\Release\pl\Microsoft.Win32.TaskScheduler.resources.dll
 D:\Project\boot-run\boot-run\boot-run\bin\Release\ru\Microsoft.Win32.TaskScheduler.resources.dll
 D:\Project\boot-run\boot-run\boot-run\bin\Release\zh-CN\Microsoft.Win32.TaskScheduler.resources.dll
-D:\Project\boot-run\boot-run\boot-run\obj\Release\boot-run.csproj.CoreCompileInputs.cache
 D:\Project\boot-run\boot-run\boot-run\obj\Release\boot-run.csproj.CopyComplete
 D:\Project\boot-run\boot-run\boot-run\obj\Release\boot-run.exe
 D:\Project\boot-run\boot-run\boot-run\obj\Release\boot-run.pdb
